@@ -19,23 +19,34 @@ const auth = getAuth(app);
 const googleAuthProvider = new GoogleAuthProvider();
 
 // Google login function
-const handleGoogleLogin = async (setError) => {
+const handleGoogleLogin = async (setError, navigate) => {
   try {
     const result = await signInWithPopup(auth, googleAuthProvider);
-    console.log("Google Sign-In:", result.user);
+    const user = result.user;
+    console.log("Google Sign-In:", user);
     setError(""); // clear error if successful
-    alert(`Welcome ${result.user.displayName} 🎉`);
 
-     if (role === "admin") navigate("/adminpage");
-    else if (role === "doctor") navigate("/doctorpage");
-    else navigate("/userpage"); 
-    
+    // Check if role already exists in Firestore
+    const userRef = doc(db, "users", user.uid);
+    const userSnap = await getDoc(userRef);
+    const roleInFirestore = userSnap.exists() && userSnap.data().role;
+
+    if (!roleInFirestore) {
+      // New Google user → go to RoleSelect page
+      navigate("/role-select");
+    } else {
+      // Existing user → redirect based on role
+      const role = roleInFirestore;
+      if (role === "doctor") navigate("/doctorpage");
+      else if (role === "admin") navigate("/adminpage");
+      else navigate("/userpage");
+    }
+
   } catch (error) {
     console.error(error);
     setError("Google sign-in failed ❌");
   }
 };
-
 const handleSubmit = async (e, setError) => {
     e.preventDefault();
     const email = e.target.email.value;

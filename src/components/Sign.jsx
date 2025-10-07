@@ -86,7 +86,7 @@ const SignIn = () => {
 
           <div className="divider">OR</div>
 
-          <button type="button" className="google-btn" onClick={handleGoogleLogin}>
+          <button type="button" className="google-btn"  onClick={handleGoogleLogin}>
             <img src="https://www.svgrepo.com/show/355037/google.svg" alt="google" className="g-icon"/> 
             Sign in with Google
           </button>

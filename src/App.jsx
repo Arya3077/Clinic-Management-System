@@ -14,6 +14,7 @@ import Reports from './user/Reports'
 import Appointments from './user/Appointments'
 import AdminPage from './Admin/AdminPage'
 import doctorpage from './Doctor/doctorpage'
+import RoleSelect from './components/l'
 
 
 
@@ -122,6 +123,15 @@ const router = createBrowserRouter([
     </>
   ),
 },  
+
+{
+  path: "/l",
+  element: (
+    <>
+      <RoleSelect />
+    </>
+  ),
+},
 
 
  
