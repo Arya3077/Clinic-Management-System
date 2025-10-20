@@ -31,7 +31,4 @@ https://www.figma.com/design/uLY8aNQMA3HTIZOVfFyq1x/Untitled?node-id=0-1&t=wT27A
 - **Authentication:** Firebase 
 - **Version Control:** Git & GitHub
 
----
 
-e https://github.com/Arya3077/Clinic-Management-System.git
-cd Clinic-Management-System
