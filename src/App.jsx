@@ -10,7 +10,11 @@ import Adminpage from './pages/Adminpage'
 import Doctorpage from './pages/Doctorpage'
 import A from './pages/Appointments'
 import Reports from './pages/Reports'
+import Schedule from './pages/schedule'
+import Prescription from './pages/Prescription'
+import Dt from './pages/Dt'
 import supabase from '../supabase-client'
+
 
 const App = () => {
   return (
@@ -27,6 +31,11 @@ const App = () => {
          <Route path='/appointments' element={<A/>}/>
          <Route path='/home' element={<Nav/>}></Route>
           <Route path='/reports' element={<Reports/>}></Route>
+           <Route path='/schedule' element={<Schedule/>}></Route>
+            <Route path='/Prescription' element={<Prescription/>}></Route>
+              <Route path='/dt' element={<Dt/>}></Route>
+           
+           
       </Routes>
     </BrowserRouter>
    

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Home from './Hero'
 import About from './About'
 import Contact from './Contact'
+import Footer from '../pages/Footer'
 
 const Nav = () => {
   return (
@@ -21,7 +22,9 @@ const Nav = () => {
 
     <Home/>
     <About/>
-    <Contact/>
+    
+    <img src='f.png' className='p-2'></img>
+  <Footer/>
 
     </>
 
