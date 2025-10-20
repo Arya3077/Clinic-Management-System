@@ -10,7 +10,7 @@ import Adminpage from './pages/Adminpage'
 import Doctorpage from './pages/Doctorpage'
 import A from './pages/Appointments'
 import Reports from './pages/Reports'
-import Schedule from './pages/schedule'
+
 import Prescription from './pages/Prescription'
 import Dt from './pages/Dt'
 
