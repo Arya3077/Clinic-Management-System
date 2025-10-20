@@ -1,16 +1,37 @@
-# React + Vite
+# 🏥 Clinic Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **web-based Clinic Management System** built with React and Supabase that simplifies managing patients, doctors, and appointments for medical clinics.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **User Authentication:** Admin, Doctor, Patient login
+- **Patient Management:** Add, edit, view, and delete patient records
+- **Doctor Management:** Manage doctor profiles and specialties
+- **Appointment Scheduling:** Book, update, cancel appointments
+- **Dashboard:** Overview of appointments, patients, and doctors
+- **Search & Filter:** Quickly find patients and doctors
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎨 Demo
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Figma Design
+View the full **UI/UX design** on Figma:  
+https://www.figma.com/design/uLY8aNQMA3HTIZOVfFyq1x/Untitled?node-id=0-1&t=wT27A1nmhMH598pd-1
+
+---
+
+## 🛠️ Technologies
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Supabase (PostgreSQL)
+- **Routing & State:** React Router, React Hooks
+- **Authentication:** Firebase 
+- **Version Control:** Git & GitHub
+
+---
+
+e https://github.com/Arya3077/Clinic-Management-System.git
+cd Clinic-Management-System
