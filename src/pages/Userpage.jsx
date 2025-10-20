@@ -7,7 +7,7 @@ import Footer from './Footer'
 import Reports from './Reports'
 
 
-const userpage = () => {
+const Userpage = () => {
    const navigate = useNavigate();
   function logout(){
     navigate("/home")
@@ -49,4 +49,4 @@ const userpage = () => {
   )
 }
 
-export default userpage
+export default Userpage

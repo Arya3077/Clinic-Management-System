@@ -5,7 +5,7 @@ import About from './components/About'
 import Sign from './components/Sign'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Select from './components/Select'
-import Userpage from './pages/userpage'
+import Userpage from './pages/Userpage'
 import Adminpage from './pages/Adminpage'
 import Doctorpage from './pages/Doctorpage'
 import A from './pages/Appointments'
@@ -13,7 +13,7 @@ import Reports from './pages/Reports'
 import Schedule from './pages/schedule'
 import Prescription from './pages/Prescription'
 import Dt from './pages/Dt'
-import supabase from '../supabase-client'
+
 
 
 const App = () => {
