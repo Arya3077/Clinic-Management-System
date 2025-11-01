@@ -2,6 +2,8 @@
 
 A **web-based Clinic Management System** built with React and Supabase that simplifies managing patients, doctors, and appointments for medical clinics.  
 
+## 🎨 Demo
+ https://clinic-management-system-j9qx.vercel.app/
 ---
 
 ## 🚀 Features
