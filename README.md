@@ -14,9 +14,6 @@ A **web-based Clinic Management System** built with React and Supabase that simp
 - **Dashboard:** Overview of appointments, patients, and doctors
 - **Search & Filter:** Quickly find patients and doctors
 
----
-
-## 🎨 Demo
 
 ---
 
